@@ -71,4 +71,55 @@ class hotelmanage:
             print ("Please choose a room from the following options")
 
         print ("Your chosen room rent is =",self.s,"\n")
+def foodpurchased(self):
 
+        print("**RESTAURANT MENU**")
+
+        print("1.Veg Combo(Breakfast,Lunch,Dinner)----->900/-","2.Non-Veg Combo----->1200/-","3.Snacks----->400/-","4.Drink----->200/-,5.Exit")
+
+        while (1):
+
+            c=int(input("Enter the number of your choice:"))
+
+
+            if (c==1):
+                d=int(input("Enter the quantity:"))
+                self.r=self.r+900*d
+
+            elif (c==2):
+                 d=int(input("Enter the quantity:"))
+                 self.r=self.r+1200*d
+
+            elif (c==3):
+                 d=int(input("Enter the quantity:"))
+                 self.r=self.r+400*d
+
+            elif (c==4):
+                 d=int(input("Enter the quantity:"))
+                 self.r=self.r+200*d
+            elif (c==5):
+                break
+            else:
+                print("You've Enter an Invalid Key")
+
+        print ("Total Food Cost=Rs",self.r,"\n")
+    def gymspa(self):
+        print("Gym and Spa Facilities:-")
+        print("1.Gym--->200/- per day")
+        print("2.Spa--->500/- for one time")
+        print("3.Exit")
+        while (1):
+            gs=int(input("Enter the activity"))
+            if(gs==1):
+                q=int(input("Enter the number of days you want to do gym"))
+                self.gs=self.gs+200*q
+                print("Rs",self.gs)
+            elif(gs==2):
+                q=int(input("Enter the number of time you want to have spa"))
+                self.gs=self.gs+500*q
+                print("Rs",self.gs)
+            elif(gs==3):
+                break
+            else:
+                print("You have entered an invalid key")
+              
