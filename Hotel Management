@@ -68,7 +68,7 @@ class hotelmanage:
 
         else:
 
-            print ("Please choose a room")
+            print ("Please choose a room from the following options")
 
         print ("Your chosen room rent is =",self.s,"\n")
 
