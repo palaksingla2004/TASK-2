@@ -122,4 +122,65 @@ def foodpurchased(self):
                 break
             else:
                 print("You have entered an invalid key")
+def game(self):
+        print("Enjoy n Fun:-")
+        print("1.Archery,2.Indoor gaming,3.Badminton,4.Basketball,5.Chess,6.Carrom")
+        game=input("Choose any one of the following and that will be included in your room package:")
+        print(game)
+        
+        
+              
+    def display(self):
+        print ("***HOTEL BILL***")
+        print ("Customer details:")
+        print ("Customer name:",self.name)
+        print ("Customer address:",self.address)
+        print ("Check in date:",self.cindate)
+        print ("Check out date",self.coutdate)
+        print ("Room no.",self.rno)
+        print ("Your Room rent is :Rs",self.s)
+        print ("Your Food bill is :Rs",self.r)
+        print("Your gym & spa bill is :Rs",self.gs)
+
+        self.rt=self.s+self.t+self.p+self.r+self.gs
+
+        print ("Your sub total Purchased is :Rs",self.rt)
+        print ("Additional Service Charges is :Rs",self.a)
+        print ("Your grandtotal Purchased is:Rs",self.rt+self.a,"\n")
+        self.rno+=self.rt+self.a
+
+def main():
+    a=hotelmanage()
+
+    while (1):
+        print("1.Enter Customer Data")
+        
+        print("2.Calculate Room Rent")
+
+        print("3.Calculate Food Purchased")
+
+        print("4.Calculate Gym & Spa Cost")
+        
+        print("5.Games Chosen")
+      
+        print("6.Show Total Cost")
+
+        print("7.EXIT")
+
+        b=int(input("\nEnter the number of your choice:"))
+        if (b==1):
+            a.inputdata()
+        if (b==2):
+            a.roomrent()
+        if (b==3):
+            a.foodpurchased()
+        if (b==4):
+            a.gymspa()
+        if(b==5):
+            a.game()           
+        if(b==6):
+            a.display()
+        if (b==7):
+                break
+main()
               
